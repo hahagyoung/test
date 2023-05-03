@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "omni20";
+    src: url(../font/210omni020.ttf);
+}
+@font-face {
+    font-family: "omni30";
+    src: url(../font/210omni030.ttf);
+}
+@font-face {
+    font-family: "omni40";
+    src: url(../font/210omni040.ttf);
+}
+@font-face {
+    font-family: "omni50";
+    src: url(../font/210omni050.ttf);
+}
+@font-face {
+    font-family: "noto sans r";
+    src: url(../font/NotoSansKR-Regular.otf);
+}
+@font-face {
+    font-family: "noto sans m";
+    src: url(../font/NotoSansKR-Medium.otf);
+}
+
+*{padding: 0; margin: 0; transition: all 0.5s; scroll-behavior: smooth;}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.hidden{
+    display: none;
+}
+
+
+/*header*/
+header{
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner nav{
+    height: 20px;
+}
+header .inner ul{
+    height: 20px;
+    font-family: "omni20";
+    font-size: 16px;
+    color: #fff;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+}
+header .inner ul li{
+    line-height: 20px;
+    border-left: 1px solid #ffffff;
+    padding: 0 15px;
+}
+header .inner ul li:first-child{
+    border-left: none;
+}
+header .inner ul li:last-child{
+    padding-right: 0;
+}
+/*header에서 add될 class추가*/
+.fix{
+    background-color: #7BAEE7;
+    box-sizing: border-box;
+}
+/*//header*/
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 900px;
+}
+.banner .gif{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner .title{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*//banner*/
+
+/*main*/
+.main{
+    height: 438px;
+    position: relative;
+    margin-top: 260px;
+    text-align: center;
+    font-family: "omni30";
+    color: #7BAEE7;
+    font-size: 35px;
+    line-height: 57px;
+}
+.main .beepo{
+    width: 177px;
+    height: 70px;
+    position: relative;
+    top: 6px;
+    left: 187px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .text{
+    font-size: 44px;
+    font-family: "omni50";
+}
+.main .text .beebee{
+    color: #B37644;
+}
+.main .text .popo{
+    color: #E2A861;
+}
+.main .text .big{
+    font-size: 55px;
+}
+.main .gif{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main .row:nth-of-type(3){
+    letter-spacing: -0.04em;
+    margin-top: 38px;
+}
+/*//main*/
+
+/*map*/
+#map{
+    width: 75.37%;
+    /*1432*/
+    height: auto;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+#map img{
+    margin: 0 auto;
+    max-width: 100%;
+}
+#map .all{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#map .all figure{
+    width: fit-content;
+    height: fit-content;
+}
+#map .all ul{
+    font-family: "omni40";
+    font-size: 22px;
+    line-height: 84px;
+    letter-spacing: -0.02em;
+    color: #F46784;
+}
+/*
+#map .all ul li{
+    -webkit-text-stroke: 2px #F46784;
+    -webkit-text-fill-color: transparent;
+}
+*/
+#map .all ul li .num{
+    padding-top: 6px;
+    font-size: 40px;
+}
+/*//map*/
+
+/*spot*/
+.spot .content{
+    width: 95%;
+    margin: auto;
+}
+.spot .content figure{
+    width: fit-content;
+    height: fit-content;
+}
+.spot .content figure img{
+    width: 100%;
+}
+.spot .content .title{
+    display: flex;
+    align-items: center;
+}
+.spot .content .title figure{
+    width: 10%;
+}
+.spot .content .title p{
+    font-family: "omni50";
+    font-size: 28px;
+    color: #F46784;
+    margin-left: 5px;
+}
+.spot .content .space p{
+    font-family: "omni30";
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+    color: #828282;
+    margin-top: 10px;
+}
+.spot .content .text p{
+    font-family: "omni30";
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: -0.05em;
+    margin-top: 25px;
+}
+.spot .row:nth-child(2){
+    margin: 110px 0;
+}
+.spot .content .title .small{
+    font-size: 26px;
+    letter-spacing: -0.07em;
+}
+/*//spot*/
+
+/*Best*/
+.best{
+    margin-top: 250px;
+}
+.best img{
+    margin: 0 auto;
+}
+.best .row:first-of-type{
+    margin-top: 90px;
+}
+.best .row .col .aaa{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.best .row .col .aaa:nth-child(2){
+    display: none;
+}
+.best .row .col .aaa:nth-child(3){
+    display: none;
+}
+.best .row .col .aaa .text{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.best .row .col .aaa .text p:first-child{
+    font-family: "omni40";
+    color: #F46784;
+    font-size: 20px;
+}
+.best .row .col .aaa .text .title p:first-child{
+    font-family: "omni50";
+    color: #000;
+    font-size: 35px;
+}
+.best .row .col .aaa .text .title p:nth-child(2){
+    font-family: "noto sans m";
+    font-size: 15px;
+    color: #3E3E3E;
+}
+.best .row .col .aaa .text p:nth-child(3){
+    font-family: "omni30";
+    font-size: 16px;
+    line-height: 30px;
+}
+.best .row .col .aaa .text ul{
+    font-family: "noto sans r";
+    font-size: 16px;
+}
+.best .row .col .aaa .text ul li{
+    margin-top: 0.5em;
+}
+
+.best .row:nth-of-type(2){
+    margin-top: 430px;
+}
+.best .row .col-2 .box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+}
+.best .row .col-2 .box figure{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20%;
+    margin: 0;
+}
+.best .row .col-2 .box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    display: block;
+    opacity: 0;
+}
+.best .row .col-2 .box p{
+    font-family: "omni30";
+    color: #fff;
+    position: absolute;
+    font-size: 13px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+/*//Best*/
+
+/*discount*/
+.discount{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 230px;
+    background-color: #F5F5F5;
+}
+.discount .all{
+    margin-top: 180px;
+}
+.discount .all .title{
+    margin-bottom: 100px;
+}
+.discount .all .title img{
+    margin: 0 auto;
+}
+.discount .all .title p{
+    margin: 50px 0;
+    text-align: center;
+    font-family: "omni40";
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.discount .all .content{
+    width: 1620px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.discount .all .content .box{
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.discount .all .content .box .text{
+    margin-left: 17px;
+    font-family: "noto sans r";
+    font-size: 14px;
+    color: #9E9696;
+}
+.discount .all .content .box .text p:nth-child(2){
+    font-family: "noto sans m";
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px;
+}
+.discount .all .content:nth-child(2){
+    display: none;
+}
+.discount .all button{
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #F46784;
+    border: none;
+    color: #fff;
+    display: block;
+    margin: 70px auto;
+}
+/*//discount*/
+
+
+@media screen and (max-width:992px) and (min-width:1200px) { 
+    .spot .content .text p{
+        font-size: 15px;
+    }
+}
